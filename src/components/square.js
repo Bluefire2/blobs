@@ -8,8 +8,9 @@ import COLORS from '../data/colors';
  * width
  * height
  * color
+ * clickHandler (optional)
  */
-export default ({width, height, color}) => {
+const Square = ({width, height, color, clickHandler}) => {
     const MARGIN = 3,
         actualWidth = width - 2 * MARGIN,
         actualHeight = height - 2 * MARGIN,
@@ -25,3 +26,9 @@ export default ({width, height, color}) => {
         </div>
     );
 };
+
+Square.defaultProps = {
+    clickHandler: () => {} // empty handler
+};
+
+export default Square;
