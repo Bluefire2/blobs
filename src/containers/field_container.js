@@ -48,10 +48,4 @@ const mapStateToProps = ({fieldSquares}) => {
     };
 };
 
-const mapDispatchToProps = dispatch => {
-    return bindActionCreators({
-        changeColor
-    }, dispatch);
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Field);
+export default connect(mapStateToProps)(Field);
