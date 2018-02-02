@@ -9,7 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
 const initialState = {
-    fieldSquares: [[0, 1, 2], [2, 3, 4], [0, 2, 4]]
+    fieldSquares: [[0, 0, 2], [0, 3, 4], [0, 2, 4]]
 };
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);

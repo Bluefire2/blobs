@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
+import {changeColor} from "../actions/index";
 import Square from '../components/square';
 
 /**
@@ -46,4 +48,10 @@ const mapStateToProps = ({fieldSquares}) => {
     };
 };
 
-export default connect(mapStateToProps)(Field);
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({
+        changeColor
+    }, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Field);
