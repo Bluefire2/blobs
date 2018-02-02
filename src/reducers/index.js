@@ -1,7 +1,9 @@
 import {combineReducers} from 'redux';
 
+import fieldSquaresReducer from './field_squares_reducer';
+
 const rootReducer = combineReducers({
-    state: (state = {}) => state
+    fieldSquares: fieldSquaresReducer
 });
 
 export default rootReducer;
