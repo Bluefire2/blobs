@@ -16,7 +16,7 @@ const Square = ({width, height, color, clickHandler}) => {
         actualHeight = height - 2 * MARGIN,
         backgroundColor = COLORS[color];
     return (
-        <div className="square" style={{
+        <div className="square" onClick={clickHandler} style={{
             margin: MARGIN,
             width: actualWidth,
             height: actualHeight,
