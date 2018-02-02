@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
-import {changeColor} from "../actions/index";
 import Square from '../components/square';
 
 /**
