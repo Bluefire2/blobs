@@ -37,3 +37,11 @@ body {
         transform: rotate(360deg);
     }
 }
+
+/*
+    Make the squares align horizontally rather than vertically
+ */
+.square {
+    float: left;
+    display: inline-block;
+}
